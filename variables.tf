@@ -102,7 +102,6 @@ variable "flux_ssh_keys" {
 
 variable "flux_basic_auth" {
   description = "The basic auth credentials. Only needed when flux_auth_type is basic"
-  sensitive   = true
   type        = object({ username : string, password : string })
 
   default = {
